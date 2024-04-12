@@ -1,0 +1,19 @@
+[2024-04-12T00:26:27.817+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-04-12T00:26:27.848+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tutorial_dag.transformar_dados_em_dataframe scheduled__2024-04-11T22:30:00+00:00 [queued]>
+[2024-04-12T00:26:27.856+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tutorial_dag.transformar_dados_em_dataframe scheduled__2024-04-11T22:30:00+00:00 [queued]>
+[2024-04-12T00:26:27.857+0000] {taskinstance.py:2303} INFO - Starting attempt 4 of 4
+[2024-04-12T00:26:28.159+0000] {taskinstance.py:2327} INFO - Executing <Task(PythonOperator): transformar_dados_em_dataframe> on 2024-04-11 22:30:00+00:00
+[2024-04-12T00:26:28.177+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=1068) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-04-12T00:26:28.176+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'tutorial_dag', 'transformar_dados_em_dataframe', 'scheduled__2024-04-11T22:30:00+00:00', '--job-id', '15', '--raw', '--subdir', 'DAGS_FOLDER/tutorial_dag.py', '--cfg-path', '/tmp/tmpw1472nkn']
+[2024-04-12T00:26:28.179+0000] {standard_task_runner.py:63} INFO - Started process 1070 to run task
+[2024-04-12T00:26:28.179+0000] {standard_task_runner.py:91} INFO - Job 15: Subtask transformar_dados_em_dataframe
+[2024-04-12T00:26:28.270+0000] {task_command.py:426} INFO - Running <TaskInstance: tutorial_dag.transformar_dados_em_dataframe scheduled__2024-04-11T22:30:00+00:00 [running]> on host ae99acc4965a
+[2024-04-12T00:26:28.356+0000] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='tutorial_dag' AIRFLOW_CTX_TASK_ID='transformar_dados_em_dataframe' AIRFLOW_CTX_EXECUTION_DATE='2024-04-11T22:30:00+00:00' AIRFLOW_CTX_TRY_NUMBER='4' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-04-11T22:30:00+00:00'
+[2024-04-12T00:26:28.360+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-04-12T00:26:28.391+0000] {logging_mixin.py:188} INFO - 20
+[2024-04-12T00:26:28.391+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-04-12T00:26:28.392+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-04-12T00:26:28.398+0000] {taskinstance.py:1205} INFO - Marking task as SUCCESS. dag_id=tutorial_dag, task_id=transformar_dados_em_dataframe, execution_date=20240411T223000, start_date=20240412T002627, end_date=20240412T002628
+[2024-04-12T00:26:28.435+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-04-12T00:26:28.452+0000] {taskinstance.py:3482} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-04-12T00:26:28.455+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
